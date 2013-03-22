@@ -14,7 +14,7 @@ DEVICE_PROVISIONED=1
 
 ## Wi-Fi interface
 wifi.interface=wlan0
-wifi.supplicant_scan_interval=120
+wifi.supplicant_scan_interval=60
 
 ## Display, graphics
 ro.sf.lcd_density=160
@@ -23,7 +23,7 @@ ro.max.fling_velocity=4000
 debug.sf.hw=1
 debug.gr.numframebuffers=3
 hwui.render_dirty_regions=false
-persist.sys.use_dithering=2
+persist.sys.use_dithering=0
 
 ## Memory
 ro.zram.default=0
@@ -36,7 +36,7 @@ debug.enabletr=true
 ro.hw_plat=7x27a
 
 ## USB, storage
-persist.sys.usb.config=mtp
+persist.sys.usb.config=mass_storage,adb
 persist.service.adb.enable=1
 ro.vold.switchablepair=/storage/sdcard0,/storage/sdcard1
 ro.vold.umsdirtyratio=50

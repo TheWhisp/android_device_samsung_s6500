@@ -32,4 +32,4 @@ PRODUCT_COPY_FILES += \
     device/samsung/s6500/rootdir/GT-S6500.rle:root/GT-S6500.rle
    
 $(call inherit-product, vendor/samsung/jena/blobs.mk)
-#$(call inherit-product, vendor/samsung/jena/blobs-nfc.mk)
+$(call inherit-product, vendor/samsung/jena/blobs-nfc.mk)

@@ -12,7 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-DEVICE_PACKAGE_OVERLAYS += device/samsung/s6500/overlay
+DEVICE_PACKAGE_OVERLAYS += device/samsung/jena/overlay
 
 include device/samsung/msm7x27a-common/msm7x27a.mk
 
@@ -29,7 +29,7 @@ PRODUCT_COPY_FILES += \
 
 ## splash screen
 PRODUCT_COPY_FILES += \
-    device/samsung/s6500/rootdir/GT-S6500.rle:root/GT-S6500.rle
+    device/samsung/jena/rootdir/GT-S6500.rle:root/GT-S6500.rle
    
 $(call inherit-product, vendor/samsung/jena/blobs.mk)
 $(call inherit-product, vendor/samsung/jena/blobs-nfc.mk)

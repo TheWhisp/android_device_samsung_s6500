@@ -21,4 +21,4 @@ include device/samsung/msm7x27a-common/BoardConfigCommon.mk
 TARGET_KERNEL_CONFIG := cyanogenmod_jena-nfc_defconfig
 
 ## OTA assert
-TARGET_OTA_ASSERT_DEVICE := jena,s6500,GT-S6500
+TARGET_OTA_ASSERT_DEVICE := jena,GT-S6500

@@ -19,15 +19,15 @@ $(call inherit-product, vendor/cm/config/gsm.mk)
 $(call inherit-product, vendor/cm/config/common_full_phone.mk)
 
 ## Inherit device files
-$(call inherit-product, device/samsung/s6500/s6500.mk)
+$(call inherit-product, device/samsung/jena/jena.mk)
 
 ## Setup device configuration
-PRODUCT_NAME := cm_s6500
+PRODUCT_NAME := cm_jena
 PRODUCT_BRAND := samsung
 PRODUCT_MANUFACTURER := samsung
 PRODUCT_MODEL := GT-S6500
 PRODUCT_RELEASE_NAME := GT-S6500
-PRODUCT_DEVICE := s6500
+PRODUCT_DEVICE := jena
 
 ## Bootanimation
 TARGET_SCREEN_HEIGHT := 480

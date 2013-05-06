@@ -24,4 +24,4 @@ TARGET_KERNEL_CONFIG := cyanogenmod_jena-nfc_defconfig
 TARGET_OTA_ASSERT_DEVICE := jena,GT-S6500
 
 ## Bluetooth
-BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/samsung/s6500/bluetooth
+BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/samsung/jena/bluetooth

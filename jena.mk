@@ -16,7 +16,6 @@ DEVICE_PACKAGE_OVERLAYS += device/samsung/jena/overlay
 
 include device/samsung/msm7x27a-common/msm7x27a.mk
 
-ifeq ($(TARGET_JENA_NFC),true)
 ## NFC
 PRODUCT_PACKAGES += \
     libnfc \
@@ -27,11 +26,10 @@ PRODUCT_PACKAGES += \
 ## NFC permissions
 PRODUCT_COPY_FILES += \
 	frameworks/native/data/etc/android.hardware.nfc.xml:system/etc/permissions/android.hardware.nfc.xml
-endif
 
-## splash screen
+## Splash screen
 PRODUCT_COPY_FILES += \
     device/samsung/jena/rootdir/GT-S6500.rle:root/GT-S6500.rle
    
 $(call inherit-product, vendor/samsung/jena/blobs.mk)
-$(call inherit-product, vendor/samsung/jena/blobs-nfc.mk) # This can stay, does no harm
+$(call inherit-product, vendor/samsung/jena/blobs-nfc.mk)

@@ -25,11 +25,11 @@ PRODUCT_PACKAGES += \
 
 ## NFC permissions
 PRODUCT_COPY_FILES += \
-	frameworks/native/data/etc/android.hardware.nfc.xml:system/etc/permissions/android.hardware.nfc.xml
+    frameworks/native/data/etc/android.hardware.nfc.xml:system/etc/permissions/android.hardware.nfc.xml
 
 ## Splash screen
 PRODUCT_COPY_FILES += \
-    device/samsung/jena/rootdir/GT-S6500.rle:root/GT-S6500.rle
-   
+    device/samsung/jena/rootdir/init.rle:root/GT-S6500.rle
+
 $(call inherit-product, vendor/samsung/jena/blobs.mk)
 $(call inherit-product, vendor/samsung/jena/blobs-nfc.mk)

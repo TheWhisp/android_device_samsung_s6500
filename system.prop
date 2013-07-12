@@ -23,17 +23,19 @@ debug.sf.hw=1
 debug.gr.numframebuffers=3
 debug.hwc.dynThreshold=1.9
 persist.sys.use_dithering=0
+debug.composition.type=mdp
 
 ## Memory
 ro.zram.default=0
-persist.sys.purgeable_assets=0
-sys.mem.max_hidden_apps=10
+persist.sys.purgeable_assets=1
+sys.mem.max_hidden_apps=8
 
 ## Qualcomm
 ro.vendor.extension_library=/system/lib/libqc-opt.so
 com.qc.hardware=true
 dev.pm.dyn_samplingrate=1
 dev.pm.dyn_sample_period=700000
+debug.camcorder.disablemeta=1
 
 ## FM
 ro.fm.analogpath.supported=true
@@ -52,16 +54,5 @@ dalvik.vm.dexopt-data-only=1
 dalvik.vm.dexopt-flags=v=a,o=v,m=y,u=y
 dalvik.vm.execution-mode=int:jit
 
-## Stagefright
-media.stagefright.enable-player=true
-media.stagefright.enable-meta=false
-media.stagefright.enable-scan=true
-media.stagefright.enable-http=true
-media.stagefright.enable-aac=true
-media.stagefright.enable-qcp=true
-
 ## CWM
 ro.cwm.enable_key_repeat=true
-
-## Camcorder
-debug.camcorder.disablemeta=1

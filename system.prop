@@ -35,7 +35,6 @@ ro.vendor.extension_library=/system/lib/libqc-opt.so
 com.qc.hardware=true
 dev.pm.dyn_samplingrate=1
 dev.pm.dyn_sample_period=700000
-debug.camcorder.disablemeta=1
 
 ## FM
 ro.fm.analogpath.supported=true
@@ -56,3 +55,6 @@ dalvik.vm.execution-mode=int:jit
 
 ## CWM
 ro.cwm.enable_key_repeat=true
+
+## Camcorder
+debug.camcorder.disablemeta=1

@@ -21,7 +21,7 @@ include device/samsung/msm7x27a-common/BoardConfigCommon.mk
 TARGET_BOOTLOADER_BOARD_NAME := jena
 
 ## Kernel
-TARGET_KERNEL_CONFIG := cyanogenmod_jena_defconfig
+TARGET_KERNEL_CONFIG := cyanogenmod/jena_defconfig
 
 ## Bluetooth
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/samsung/jena/bluetooth

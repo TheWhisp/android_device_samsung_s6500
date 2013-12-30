@@ -14,6 +14,9 @@
 
 DEVICE_PACKAGE_OVERLAYS += device/samsung/jena/overlay
 
+## Build recovery?
+#BUILD_RECOVERY := true
+
 include device/samsung/msm7x27a-common/msm7x27a.mk
 
 ## NFC
@@ -27,13 +30,15 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.nfc.xml:system/etc/permissions/android.hardware.nfc.xml
 
+ifndef BUILD_RECOVERY
 ## Splash screen
 PRODUCT_COPY_FILES += \
     device/samsung/jena/rootdir/init.rle:root/GT-S6500.rle
-
+else
 ## Recovery splash screen
-#PRODUCT_COPY_FILES += \
-#    device/samsung/jena/rootdir/init-cwm.rle:root/GT-S6500.rle
+PRODUCT_COPY_FILES += \
+    device/samsung/jena/rootdir/init-cwm.rle:root/GT-S6500.rle
+endif
 
 $(call inherit-product, vendor/samsung/jena/blobs.mk)
 $(call inherit-product, vendor/samsung/jena/blobs-nfc.mk)

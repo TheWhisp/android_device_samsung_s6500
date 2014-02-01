@@ -33,7 +33,7 @@ PRODUCT_COPY_FILES += \
 ifndef BUILD_RECOVERY
 ## Splash screen
 PRODUCT_COPY_FILES += \
-    device/samsung/jenad/rootdir/init.rle:root/GT-S6500.rle
+    device/samsung/jena/rootdir/init.rle:root/GT-S6500.rle
 else
 ## Recovery splash screen
 PRODUCT_COPY_FILES += \

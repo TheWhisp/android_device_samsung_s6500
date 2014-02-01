@@ -6,7 +6,7 @@
 ## RIL, network
 rild.libpath=/system/lib/libsec-ril.so
 rild.libargs=-d /dev/smd0
-ro.telephony.ril_class=SamsungMSM7x27a
+ro.telephony.ril_class=SamsungRIL
 ro.telephony.ril.v3=datacall,icccardstatus
 
 ## Wi-Fi interface
